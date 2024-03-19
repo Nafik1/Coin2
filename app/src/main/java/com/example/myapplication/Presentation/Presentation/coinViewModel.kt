@@ -23,6 +23,7 @@ import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 class coinViewModel(applicaton: Application) : AndroidViewModel(applicaton) {
+
     private val repository = CoinRepositoryImpl(applicaton)
     private val getCoinInfoUseCase = GetCoinInfoUseCase(repository)
     private val getCoinInfoListUseCase = GetCoinInfoListUseCase(repository)
